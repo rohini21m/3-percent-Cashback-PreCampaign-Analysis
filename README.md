@@ -10,3 +10,4 @@ Stakeholder Recommendations:
 A) Preserve $1,500 Threshold : Keep 3% cashback accessible for mass-market retail spend activation. 
 B) Michelin Star Tier : Introduce elite cashback rewards for Michelin-star dining beyond $1,500.
 
+<img width="864" height="471" alt="cashback1" src="https://github.com/user-attachments/assets/7d0ddbd5-3716-4ac7-9f0d-04bce6972b90" />
