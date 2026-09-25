@@ -19,7 +19,7 @@ b)Metrics : Cutsomers with repeated purchases in given category :Groceries, stre
         COUNT(trnx_id) AS customer_trnx_count
     FROM RFM_ANALYSIS.fact_transactions   
     WHERE trnx_date >= '2025-01-01' AND trnx_date <= '2025-03-31' 
-      AND product_code IN ('101', '102') 
+      AND product_code='101'
       AND merchant_code IN ('9135', '9144', '9147', '9149') 
     GROUP BY account_id, merchant_code_description, TO_CHAR(trnx_date, 'YYYY-MM')
 )
@@ -45,7 +45,7 @@ from RFM_ANALYSIS.fact_transactions f
 inner join RFM_ANALYSIS.dim_products p 
 on p.product_code=f.product_code
 WHERE trnx_date >= '2025-01-01' AND trnx_date <= '2025-03-31' 
-AND p.product_code IN ('101', '102') 
+AND p.product_code='101'
 AND merchant_code IN ('9135', '9144', '9147', '9149') 
 GROUP by product_name,merchant_code_description,account_id
 ), spending_segmentation as(
