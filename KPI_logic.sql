@@ -20,7 +20,7 @@ INNER JOIN RFM_ANALYSIS.dim_products p
     ON f.product_code = p.product_code  
 WHERE trnx_date >= '2025-01-01' 
   AND trnx_date <= '2025-12-31'
-  AND f.product_code IN ('101', '102') 
+  AND f.product_code='101'
   AND f.merchant_code IN ('9135', '9144', '9147', '9149') 
 GROUP BY merchant_code, merchant_code_description, product_name
 
@@ -51,7 +51,7 @@ from RFM_ANALYSIS.fact_transactions f
 inner join RFM_ANALYSIS.dim_products p 
 on p.product_code=f.product_code
 WHERE trnx_date >= '2025-01-01' AND trnx_date <= '2025-03-31' 
-AND p.product_code IN ('101', '102') 
+AND p.product_code='101'
 AND merchant_code IN ('9135', '9144', '9147', '9149') 
 GROUP by product_name,account_id
 ), combined_spending_segmentation as(
