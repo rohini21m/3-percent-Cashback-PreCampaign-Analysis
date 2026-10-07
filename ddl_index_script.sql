@@ -393,4 +393,4 @@ CREATE INDEX idx_dim_customers_geo ON RFM_analysis.dim_customers (country, state
 CREATE INDEX idx_dim_accounts_product_code ON RFM_analysis.dim_accounts (product_code); 
 
 COPY RFM_ANALYSIS.fact_transactions
-TO '/Users/rohinisaichandramunnangi/Downloads/fact_transactions.csv' WITH (FORMAT CSV, HEADER); 
+TO '/Users/path/Downloads/fact_transactions.csv' WITH (FORMAT CSV, HEADER); 
